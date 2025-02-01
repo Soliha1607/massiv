@@ -1,33 +1,33 @@
-// #include "stdio.h"
-////1task
-// int main() {
-//     int n = 3, m = 4;
-//     int a[3][4] = {
-//         {12, 3, 4, 0},
-//         {-5, 6, 7, 8},
-//         {-9, 10, 11, 12}
-//     };
-//
-//     int sum = 0;
-//     int found_negative = 0;
-//
-//     printf("Output: ");
-//     for (int i = 0; i < n && !found_negative; i++) {
-//         for (int j = 0; j < m && !found_negative; j++) {
-//             if (a[i][j] < 0) {
-//                 found_negative = 1;
-//                 break;
-//             }
-//             if (sum == 0) {
-//                 printf("%d", a[i][j]);
-//             } else {
-//                 printf("+%d", a[i][j]);
-//             }
-//             sum += a[i][j];
-//         }
-//     }
-//     printf("=%d\n", sum);
-// }
+#include "stdio.h"
+//1task
+int main() {
+    int n = 3, m = 4;
+    int a[3][4] = {
+        {12, 3, 4, 0},
+        {-5, 6, 7, 8},
+        {-9, 10, 11, 12}
+    };
+
+    int sum = 0;
+    int found_negative = 0;
+
+    printf("Output: ");
+    for (int i = 0; i < n && !found_negative; i++) {
+        for (int j = 0; j < m && !found_negative; j++) {
+            if (a[i][j] < 0) {
+                found_negative = 1;
+                break;
+            }
+            if (sum == 0) {
+                printf("%d", a[i][j]);
+            } else {
+                printf("+%d", a[i][j]);
+            }
+            sum += a[i][j];
+        }
+    }
+    printf("=%d\n", sum);
+}
 
 // #include "stdio.h"
 ////2task
