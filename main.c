@@ -29,39 +29,39 @@ int main() {
     printf("=%d\n", sum);
 }
 
-// #include "stdio.h"
-////2task
-// int main() {
-//     int a[3][4]={
-//         {1, 2, 3, 4},
-//         {-5, 6, 7, 8},
-//         {-9, 10, 11 ,12},
-//     };
-//
-//     int LNR = 0;
-//     int LNC = 0;
-//
-//     for (int i = 0; i < 3; i++) {
-//         for (int j = 0; j < 4; j++) {
-//             if (a[i][j] < 0) {
-//                 LNR = i;
-//                 LNC= j;
-//             }
-//         }
-//     }
-//
-//     printf("Sonlar yig'indisi: \n");
-//     int n =0;
-//     for(int i = LNR; i < 3; i++) {
-//         for(int j = i == LNR ? LNC + 1 : 0; j < 4; j++) {
-//            n += a[i][j];
-//             printf("%d", a[i][j]);
-//             char *sign = i+j == 6 ? "=" : "+";
-//             printf("%s", sign);
-//         }
-//     }
-//     printf("%d", n);
-// }
+#include "stdio.h"
+//2task
+int main() {
+    int a[3][4]={
+        {1, 2, 3, 4},
+        {-5, 6, 7, 8},
+        {-9, 10, 11 ,12},
+    };
+
+    int LNR = 0;
+    int LNC = 0;
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 4; j++) {
+            if (a[i][j] < 0) {
+                LNR = i;
+                LNC= j;
+            }
+        }
+    }
+
+    printf("Sonlar yig'indisi: \n");
+    int n =0;
+    for(int i = LNR; i < 3; i++) {
+        for(int j = i == LNR ? LNC + 1 : 0; j < 4; j++) {
+           n += a[i][j];
+            printf("%d", a[i][j]);
+            char *sign = i+j == 6 ? "=" : "+";
+            printf("%s", sign);
+        }
+    }
+    printf("%d", n);
+}
 
 // #include "stdio.h"
 ////3task
